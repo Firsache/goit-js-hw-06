@@ -12,14 +12,27 @@
 
 // Category: Technologies
 // Elements: 5
+//==========================================================================================
+//                        Final answer
 
-const listEl = document.querySelectorAll('#categories >li');
-console.log(`Number of categories: ${listEl.length}`);
 
-// const list = document.querySelector('#categories');
-// console.log(list.firstChild);
+const listElements = document.querySelectorAll('#categories >li');
+console.log(`Number of categories: ${listElements.length}`);
+for (let elem of listElements) {
+    console.log(`Category: ${elem.querySelector('h2').textContent}\nElements: ${ elem.querySelectorAll('li').length }`)
+}
 
-const titleListItemOne = document.querySelector('.item > h2')
-console.log(titleListItemOne);
-const elementsListItemOne = document.querySelectorAll('.item > li')
-console.log(elementsListItemOne);
+
+
+
+
+
+
+
+
+
+//(ideas for searching via selectors)
+// const titleListItemOne = document.querySelector('.item > h2')
+// console.log(titleListItemOne);
+// const elementsListItemOne = document.querySelectorAll('.item > li')
+// console.log(elementsListItemOne);
