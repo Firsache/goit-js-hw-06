@@ -32,6 +32,7 @@ for (let elem of listElements) {
 
 
 //(ideas for searching via selectors)
+
 // const titleListItemOne = document.querySelector('.item > h2')
 // console.log(titleListItemOne);
 // const elementsListItemOne = document.querySelectorAll('.item > li')

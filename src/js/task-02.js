@@ -34,10 +34,10 @@ for (let ingredient of ingredients) {
 //   const listItem = document.createElement('li');
 
 //   listItem.textContent = ingredient;
-//   listItem.classList.add('item');
-//   return `${listItem}`;
+//   listItem.classList.add("item");
+//   return 'listItem';
 // }
 
-// const createIngredientsListEl = ingredients.map(createIngredient).join('');
+// const createIngredientsListEl = ingredients.map(createIngredient).join("");
 
 // list.insertAdjacentHTML('afterbegin', createIngredientsListEl);

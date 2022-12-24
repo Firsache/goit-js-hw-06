@@ -24,12 +24,12 @@ const galleryList = document.querySelector('.gallery');
 const createImage = ({url, alt}) => {
   return `
   <li>
-    <img url=${url} alt=${alt}>
+    <img url='${url}' alt='${alt}'>
   </li>
   `
 }
 
 const createGalleryImages = images.map(createImage).join('');
-console.log(createGalleryImages);
+//console.log(createGalleryImages);
 
 galleryList.insertAdjacentHTML('afterbegin', createGalleryImages);
