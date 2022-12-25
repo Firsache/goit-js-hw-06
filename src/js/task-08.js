@@ -16,3 +16,22 @@
 
 // Виведи об'єкт із введеними даними в консоль і очисти 
 // значення полів форми методом reset.
+
+
+const formLogin = document.querySelector('.login-form');
+
+formLogin.addEventListener('submit', evt => {
+    evt.preventDefault();
+
+    const {
+    elements: { email, password }
+    } = evt.currentTarget;
+    
+
+    if (email.value === '' || password.value === '') {
+        alert('Всі поля повинні бути заповнені');
+    }
+
+    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    evt.currentTarget.reset();
+})
