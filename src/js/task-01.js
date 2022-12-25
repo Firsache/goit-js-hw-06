@@ -15,21 +15,15 @@
 //==========================================================================================
 //                        Final answer
 
-
-const listElements = document.querySelectorAll('#categories >li');
+const listElements = document.querySelectorAll("#categories >li");
 console.log(`Number of categories: ${listElements.length}`);
 for (let elem of listElements) {
-    console.log(`Category: ${elem.querySelector('h2').textContent}\nElements: ${ elem.querySelectorAll('li').length }`)
+  console.log(
+    `Category: ${elem.querySelector("h2").textContent}\nElements: ${
+      elem.querySelectorAll("li").length
+    }`
+  );
 }
-
-
-
-
-
-
-
-
-
 
 //(ideas for searching via selectors)
 
