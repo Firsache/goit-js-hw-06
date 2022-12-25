@@ -6,6 +6,10 @@
 const inputNameEl = document.querySelector('#name-input');
 const outputNameEl = document.querySelector('#name-output');
 
-inputNameEl.addEventListener('focus', evt => {
-    inputNameEl.style.outlineColor = 'red';
+inputNameEl.addEventListener('input', evt => {    
+    if (inputNameEl.value === '') {
+        outputNameEl.textContent = 'Anonymous';
+    } else {
+        outputNameEl.textContent = inputNameEl.value;
+    }
 });

@@ -21,10 +21,10 @@ const images = [
 
 const galleryList = document.querySelector('.gallery');
 
-const createImage = ({url, alt}) => {
+const createImage = ({ url, alt }) => {
   return `
   <li>
-    <img url='${url}' alt='${alt}'>
+    <img url=${url} alt='${alt}'>
   </li>
   `
 }
