@@ -14,6 +14,7 @@ const ingredients = [
   "Condiments",
 ];
 const list = document.querySelector("#ingredients");
+const items = [];
 
 for (let ingredient of ingredients) {
   const listEl = document.createElement("li");
@@ -21,8 +22,9 @@ for (let ingredient of ingredients) {
   listEl.textContent = ingredient;
   listEl.classList.add("item");
 
-  list.append(listEl);
+  items.push(listEl);
 }
+list.append(...items);
 
 // ========================================================
 // //This variant didn't work
